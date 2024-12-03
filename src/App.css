@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+/* Import Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Glow effect for a cyber look */
+.glow {
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.6), 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Smooth hover scaling for buttons */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Shadow effect for form fields on hover */
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Green shadow for a cyber effect */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Custom smooth animations for transition */
+.transition-smooth {
+  transition: all 0.3s ease;
 }
